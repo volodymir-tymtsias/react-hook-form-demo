@@ -71,18 +71,18 @@ button {
   -webkit-appearance: none;
 }
 
-button:hover {
+button:disabled {
+  opacity: 0.4;
+}
+
+button:hover:not(:disabled){
   background: #bf1650;
 }
 
-button:active {
+button:active:not(:disabled){
   transform: translateY(3px);
   border: 1px solid transparent;
   opacity: 0.8;
-}
-
-input:disabled {
-  opacity: 0.4;
 }
 
 section {
